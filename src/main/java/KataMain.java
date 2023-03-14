@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class KataMain {
@@ -7,23 +8,24 @@ public class KataMain {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Dime un número entre el 1 y 3000");
         numeroEntrada = teclado.nextInt();
-        convertirNumero(numeroEntrada);
-
+        String respuesta= convertirNumero(numeroEntrada);
+        System.out.println(respuesta);
 
 
     }
 
 
     public static String convertirNumero (int numero){
-        String numeroEnRomano= "";
-        String numeroUno = "I";
-        if (numero>0 && numero<4){
-            for (int i=1; i==numero; i++ ){
-                numeroEnRomano= numeroEnRomano + numeroUno  ;
+        String numeroEnRomano = "";
+        String unoRomano ="I";
+        if (numero<4){
+            for (int i=1; i<=numero; i++){
+                numeroEnRomano= numeroEnRomano + unoRomano;
             }
-        }else {
-            numeroEnRomano= "V";
         }
+        if (numero==4){numeroEnRomano="IV";}
+        if (numero==5){numeroEnRomano="V";}
+
 
         return numeroEnRomano;
     }
