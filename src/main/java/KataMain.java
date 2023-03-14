@@ -18,53 +18,42 @@ public class KataMain {
     public static String convertirNumero (int numero){
         String numeroEnRomano = "";
         String unoRomano ="I";
+        int unidades;
+        int decenas;
+
+        decenas = numero / 10 % 10;
+        unidades = numero % 10;
+
+        if (decenas == 9) {
+            numeroEnRomano = numeroEnRomano + "XC";
+        } else if (decenas >= 5) {
+            numeroEnRomano = numeroEnRomano + "L";
+            for (int i = 6; i <= decenas; i++) {
+                numeroEnRomano = numeroEnRomano + "X";
+            }
+        } else if (decenas == 4) {
+            numeroEnRomano = numeroEnRomano + "XL";
+        } else {
+            for (int i = 1; i <= decenas; i++) {
+                numeroEnRomano = numeroEnRomano + "X";
+            }
+        }
 
 
-
-        if (numero == 9) {
+        if (unidades == 9) {
             numeroEnRomano = numeroEnRomano + "IX";
-        } else if (numero >= 5) {
+        } else if (unidades >= 5) {
             numeroEnRomano = numeroEnRomano + "V";
-            for (int i = 6; i <= numero; i++) {
+            for (int i = 6; i <= unidades; i++) {
                 numeroEnRomano = numeroEnRomano + unoRomano;
             }
-        } else if (numero == 4) {
+        } else if (unidades == 4) {
             numeroEnRomano = numeroEnRomano + "IV";
         } else {
-            for (int i = 1; i <= numero; i++) {
+            for (int i = 1; i <= unidades; i++) {
                 numeroEnRomano = numeroEnRomano + unoRomano;
             }
         }
-
-        if (numero == 10){numeroEnRomano= "X";}
-
-        if (numero == 13){
-            numeroEnRomano= "X";
-            for (int i=10; i< numero ; i++){
-                numeroEnRomano = numeroEnRomano + unoRomano;
-            }
-        }
-
-        if (numero == 15){numeroEnRomano= "XV";}
-
-        if (numero == 20){numeroEnRomano= "XX";}
-
-        if (numero == 33){
-            numeroEnRomano= "XXX";
-            for (int i=30; i< numero ; i++){
-                numeroEnRomano = numeroEnRomano + unoRomano;
-            }
-        }
-        if (numero == 47){
-            numeroEnRomano= "XLV";
-            for (int i=45; i< numero ; i++){
-                numeroEnRomano = numeroEnRomano + unoRomano;
-            }
-        }
-        if (numero == 69){
-            numeroEnRomano= "LXIX";
-        }
-
 
 
         return numeroEnRomano;
