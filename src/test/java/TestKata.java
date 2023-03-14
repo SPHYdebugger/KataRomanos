@@ -105,5 +105,35 @@ public class TestKata {
         KataMain kata = new KataMain();
         Assert.assertEquals("CLXIX", kata.convertirNumero(169));
     }
+    @Test
+    public void pruebaMilCientoTrece(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("MCXIII", kata.convertirNumero(1113));
+    }
+    @Test
+    public void pruebaMilCientoQuince(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("MCXV", kata.convertirNumero(1115));
+    }
+    @Test
+    public void pruebaMilCientoVeinte(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("MCXX", kata.convertirNumero(1120));
+    }
+    @Test
+    public void pruebaDosMilCientoTreintaytres(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("MMCXXXIII", kata.convertirNumero(2133));
+    }
+    @Test
+    public void pruebaDosMilCientoCuarentaysiete(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("MMCXLVII", kata.convertirNumero(2147));
+    }
+    @Test
+    public void pruebaDosMilCientoSesentaynueve(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("MMCLXIX", kata.convertirNumero(2169));
+    }
 
 }
