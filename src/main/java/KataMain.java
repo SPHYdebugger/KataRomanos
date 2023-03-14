@@ -20,12 +20,25 @@ public class KataMain {
         String unoRomano ="I";
         int unidades;
         int decenas;
+        int centenas;
 
         decenas = numero / 10 % 10;
         unidades = numero % 10;
+        centenas = numero / 100 % 10;
 
-        if (numero>=100){
-            numeroEnRomano="C";
+        if (centenas == 9) {
+            numeroEnRomano = numeroEnRomano + "CM";
+        } else if (centenas >= 5) {
+            numeroEnRomano = numeroEnRomano + "D";
+            for (int i = 6; i <= centenas; i++) {
+                numeroEnRomano = numeroEnRomano + "C";
+            }
+        } else if (centenas == 4) {
+            numeroEnRomano = numeroEnRomano + "CD";
+        } else {
+            for (int i = 1; i <= centenas; i++) {
+                numeroEnRomano = numeroEnRomano + "C";
+            }
         }
 
         if (decenas == 9) {
@@ -42,7 +55,6 @@ public class KataMain {
                 numeroEnRomano = numeroEnRomano + "X";
             }
         }
-
 
         if (unidades == 9) {
             numeroEnRomano = numeroEnRomano + "IX";
