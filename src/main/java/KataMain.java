@@ -24,7 +24,9 @@ public class KataMain {
         decenas = numero / 10 % 10;
         unidades = numero % 10;
 
-
+        if (numero>=100){
+            numeroEnRomano="C";
+        }
 
         if (decenas == 9) {
             numeroEnRomano = numeroEnRomano + "XC";
