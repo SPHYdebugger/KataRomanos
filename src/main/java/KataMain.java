@@ -18,19 +18,21 @@ public class KataMain {
     public static String convertirNumero (int numero){
         String numeroEnRomano = "";
         String unoRomano ="I";
-        if (numero<4){
-            for (int i=1; i<=numero; i++){
-                numeroEnRomano= numeroEnRomano + unoRomano;
+
+        if (numero == 9) {
+            numeroEnRomano = numeroEnRomano + "IX";
+        } else if (numero >= 5) {
+            numeroEnRomano = numeroEnRomano + "V";
+            for (int i = 6; i <= numero; i++) {
+                numeroEnRomano = numeroEnRomano + unoRomano;
+            }
+        } else if (numero == 4) {
+            numeroEnRomano = numeroEnRomano + "IV";
+        } else {
+            for (int i = 1; i <= numero; i++) {
+                numeroEnRomano = numeroEnRomano + unoRomano;
             }
         }
-        if (numero==4){numeroEnRomano="IV";}
-        if (numero==5){numeroEnRomano="V";}
-        if (numero==6){numeroEnRomano="VI";}
-        if (numero==7){numeroEnRomano="VII";}
-        if (numero==8){numeroEnRomano="VIII";}
-        if (numero==9){numeroEnRomano="IX";}
-        if (numero==10){numeroEnRomano="X";}
-
 
         return numeroEnRomano;
     }
