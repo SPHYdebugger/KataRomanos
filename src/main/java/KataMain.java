@@ -25,6 +25,11 @@ public class KataMain {
         }
         if (numero==4){numeroEnRomano="IV";}
         if (numero==5){numeroEnRomano="V";}
+        if (numero==6){numeroEnRomano="VI";}
+        if (numero==7){numeroEnRomano="VII";}
+        if (numero==8){numeroEnRomano="VIII";}
+        if (numero==9){numeroEnRomano="IX";}
+        if (numero==10){numeroEnRomano="X";}
 
 
         return numeroEnRomano;
