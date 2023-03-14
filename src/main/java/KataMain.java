@@ -26,6 +26,17 @@ public class KataMain {
         unidades = numero % 10;
         centenas = numero / 100 % 10;
 
+        if (numero >= 1000 && numero<=1999){
+            numeroEnRomano = numeroEnRomano + "M";
+        }
+        if (numero >= 2000 && numero<=2999){
+            numeroEnRomano = numeroEnRomano + "MM";
+        }
+        if (numero >= 3000 && numero<=3999){
+            numeroEnRomano = numeroEnRomano + "MMM";
+        }
+
+
         if (centenas == 9) {
             numeroEnRomano = numeroEnRomano + "CM";
         } else if (centenas >= 5) {
