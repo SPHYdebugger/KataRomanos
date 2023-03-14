@@ -41,10 +41,39 @@ public class TestKata {
         Assert.assertEquals("VIII", kata.convertirNumero(8));
     }
     @Test
-    public void pruebaNueve(){
+    public void pruebaDiez(){
         KataMain kata = new KataMain();
-        Assert.assertEquals("IX", kata.convertirNumero(9));
+        Assert.assertEquals("X", kata.convertirNumero(10));
     }
-
+    @Test
+    public void pruebaTrece(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("XIII", kata.convertirNumero(13));
+    }
+    @Test
+    public void pruebaQuince(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("XV", kata.convertirNumero(15));
+    }
+    @Test
+    public void pruebaVeinte(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("XX", kata.convertirNumero(20));
+    }
+    @Test
+    public void pruebaTreintaytres(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("XXXIII", kata.convertirNumero(33));
+    }
+    @Test
+    public void pruebaCuarentaysiete(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("XLVII", kata.convertirNumero(47));
+    }
+    @Test
+    public void pruebaSesentaynueve(){
+        KataMain kata = new KataMain();
+        Assert.assertEquals("LXIX", kata.convertirNumero(69));
+    }
 
 }

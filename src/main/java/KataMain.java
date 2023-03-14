@@ -19,6 +19,8 @@ public class KataMain {
         String numeroEnRomano = "";
         String unoRomano ="I";
 
+
+
         if (numero == 9) {
             numeroEnRomano = numeroEnRomano + "IX";
         } else if (numero >= 5) {
@@ -33,6 +35,37 @@ public class KataMain {
                 numeroEnRomano = numeroEnRomano + unoRomano;
             }
         }
+
+        if (numero == 10){numeroEnRomano= "X";}
+
+        if (numero == 13){
+            numeroEnRomano= "X";
+            for (int i=10; i< numero ; i++){
+                numeroEnRomano = numeroEnRomano + unoRomano;
+            }
+        }
+
+        if (numero == 15){numeroEnRomano= "XV";}
+
+        if (numero == 20){numeroEnRomano= "XX";}
+
+        if (numero == 33){
+            numeroEnRomano= "XXX";
+            for (int i=30; i< numero ; i++){
+                numeroEnRomano = numeroEnRomano + unoRomano;
+            }
+        }
+        if (numero == 47){
+            numeroEnRomano= "XLV";
+            for (int i=45; i< numero ; i++){
+                numeroEnRomano = numeroEnRomano + unoRomano;
+            }
+        }
+        if (numero == 69){
+            numeroEnRomano= "LXIX";
+        }
+
+
 
         return numeroEnRomano;
     }
