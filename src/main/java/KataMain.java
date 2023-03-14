@@ -5,13 +5,17 @@ public class KataMain {
 
     public static void main(String[] args) {
         int numeroEntrada;
+
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Dime un número entre el 1 y 3000");
-        numeroEntrada = teclado.nextInt();
-        String respuesta= convertirNumero(numeroEntrada);
-        System.out.println(respuesta);
 
+            do {
+                System.out.println("Por favor, introduce un número entre el 1 y el 3000 ");
+                System.out.println("Yo lo convertiré en números romanos.");
+                numeroEntrada = teclado.nextInt();
+            } while (numeroEntrada < 1 || numeroEntrada > 3000);
 
+            String respuesta= convertirNumero(numeroEntrada);
+            System.out.println("El número " + numeroEntrada + " en romanos es " + respuesta);
     }
 
 
@@ -32,7 +36,7 @@ public class KataMain {
         if (numero >= 2000 && numero<=2999){
             numeroEnRomano = numeroEnRomano + "MM";
         }
-        if (numero >= 3000 && numero<=3999){
+        if (numero == 3000){
             numeroEnRomano = numeroEnRomano + "MMM";
         }
 
