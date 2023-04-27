@@ -14,11 +14,11 @@ public class KataMain {
                 numeroEntrada = teclado.nextInt();
             } while (numeroEntrada < 1 || numeroEntrada > 3000);
 
-            String respuesta= convertirNumero(numeroEntrada);
+            String respuesta = convertirNumero(numeroEntrada);
             System.out.println("El número " + numeroEntrada + " en romanos es " + respuesta);
     }
 
-
+// Método para convertir a romano
     public static String convertirNumero (int numero){
         String numeroEnRomano = "";
         String unoRomano ="I";
