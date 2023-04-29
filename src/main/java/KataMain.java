@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-final class KataMain {
+class KataMain {
     /**
      * Método principal.
      *
