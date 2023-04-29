@@ -1,16 +1,16 @@
 
 import java.util.Scanner;
 
-public class KataMain {
+public final class KataMain {
 
-    //Método principal
+//Método principal
     public static void main(String[] args) {
         int numeroEntrada;
 
         Scanner teclado = new Scanner(System.in);
 
             do {
-                System.out.println("Por favor, introduce un número entre el 1 y el 3000 ");
+                System.out.println("Introduce un número entre el 1 y el 3000 ");
                 System.out.println("Yo lo convertiré en números romanos.");
                 numeroEntrada = teclado.nextInt();
             } while (numeroEntrada < 1 || numeroEntrada > 3000);
@@ -20,11 +20,11 @@ public class KataMain {
     }
 
 // Método para convertir a romano
-    public static String convertirNumero (int numero){
+    static String convertirNumero (int numero){
         String numeroEnRomano = "";
-        String unoRomano ="I";
-        int unidades;
-        int decenas;
+        final String unoRomano ="I";
+        final int unidades;
+        final int decenas;
         final int centenas;
 
         decenas = numero / 10 % 10;
@@ -87,8 +87,8 @@ public class KataMain {
             }
         }
 
-
         return numeroEnRomano;
     }
+
 
 }

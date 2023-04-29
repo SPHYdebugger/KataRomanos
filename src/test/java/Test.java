@@ -6,158 +6,158 @@ public class Test {
     @org.junit.Test
     // Probando el número 1
         public void pruebaUno(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("I", kata.convertirNumero(1));
+        int numeroPrueba = 1;
+        Assert.assertEquals("I", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 2
     public void pruebaDos(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("II", kata.convertirNumero(2));
+        int numeroPrueba = 2;
+        Assert.assertEquals("II", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 3
     public void pruebaTres(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("III", kata.convertirNumero(3));
+        int numeroPrueba = 3;
+        Assert.assertEquals("III", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 5
     public void pruebaCinco(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("V", kata.convertirNumero(5));
+        int numeroPrueba = 5;
+        Assert.assertEquals("V", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 6
     public void pruebaSeis(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("VI", kata.convertirNumero(6));
+        int numeroPrueba = 6;
+        Assert.assertEquals("VI", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 7
     public void pruebaSiete(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("VII", kata.convertirNumero(7));
+        int numeroPrueba = 7;
+        Assert.assertEquals("VII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 8
     public void pruebaOcho(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("VIII", kata.convertirNumero(8));
+        int numeroPrueba = 8;
+        Assert.assertEquals("VIII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 10
     public void pruebaDiez(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("X", kata.convertirNumero(10));
+        int numeroPrueba = 10;
+        Assert.assertEquals("X", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 13
     public void pruebaTrece(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("XIII", kata.convertirNumero(13));
+        int numeroPrueba = 13;
+        Assert.assertEquals("XIII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 15
     public void pruebaQuince(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("XV", kata.convertirNumero(15));
+        int numeroPrueba = 15;
+        Assert.assertEquals("XV", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 20
     public void pruebaVeinte(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("XX", kata.convertirNumero(20));
+        int numeroPrueba = 20;
+        Assert.assertEquals("XX", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 33
     public void pruebaTreintaytres(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("XXXIII", kata.convertirNumero(33));
+        int numeroPrueba = 33;
+        Assert.assertEquals("XXXIII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 47
     public void pruebaCuarentaysiete(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("XLVII", kata.convertirNumero(47));
+        int numeroPrueba = 47;
+        Assert.assertEquals("XLVII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 69
     public void pruebaSesentaynueve(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("LXIX", kata.convertirNumero(69));
+        int numeroPrueba = 69;
+        Assert.assertEquals("LXIX", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 113
     public void pruebaCientoTrece(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("CXIII", kata.convertirNumero(113));
+        int numeroPrueba = 113;
+        Assert.assertEquals("CXIII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 115
     public void pruebaCientoQuince(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("CXV", kata.convertirNumero(115));
+        int numeroPrueba = 115;
+        Assert.assertEquals("CXV", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 120
     public void pruebaCientoVeinte(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("CXX", kata.convertirNumero(120));
+        int numeroPrueba = 120;
+        Assert.assertEquals("CXX", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 133
     public void pruebaCientoTreintaytres(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("CXXXIII", kata.convertirNumero(133));
+        int numeroPrueba = 133;
+        Assert.assertEquals("CXXXIII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 147
     public void pruebaCientoCuarentaysiete(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("CXLVII", kata.convertirNumero(147));
+        int numeroPrueba = 147;
+        Assert.assertEquals("CXLVII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 169
     public void pruebaCientoSesentaynueve(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("CLXIX", kata.convertirNumero(169));
+        int numeroPrueba = 169;
+        Assert.assertEquals("CLXIX", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 1113
     public void pruebaMilCientoTrece(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("MCXIII", kata.convertirNumero(1113));
+        int numeroPrueba = 1113;
+        Assert.assertEquals("MCXIII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 1115
     public void pruebaMilCientoQuince(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("MCXV", kata.convertirNumero(1115));
+        int numeroPrueba = 1115;
+        Assert.assertEquals("MCXV", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 1120
     public void pruebaMilCientoVeinte(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("MCXX", kata.convertirNumero(1120));
+        int numeroPrueba = 1120;
+        Assert.assertEquals("MCXX", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 1133
     public void pruebaDosMilCientoTreintaytres(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("MMCXXXIII", kata.convertirNumero(2133));
+        int numeroPrueba = 2133;
+        Assert.assertEquals("MMCXXXIII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 2147
     public void pruebaDosMilCientoCuarentaysiete(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("MMCXLVII", kata.convertirNumero(2147));
+        int numeroPrueba = 2147;
+        Assert.assertEquals("MMCXLVII", KataMain.convertirNumero(numeroPrueba));
     }
     @org.junit.Test
     // Probando el número 2169
     public void pruebaDosMilCientoSesentaynueve(){
-        KataMain kata = new KataMain();
-        Assert.assertEquals("MMCLXIX", kata.convertirNumero(2169));
+        int numeroPrueba = 2169;
+        Assert.assertEquals("MMCLXIX", KataMain.convertirNumero(numeroPrueba));
     }
 
 }
