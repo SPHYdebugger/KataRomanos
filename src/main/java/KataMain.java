@@ -3,7 +3,9 @@ import java.util.Scanner;
 
 public final class KataMain {
 
-//Método principal
+/*Método principal
+
+ */
     public static void main(String[] args) {
         int numeroEntrada;
 
@@ -19,7 +21,9 @@ public final class KataMain {
             System.out.println("El número " + numeroEntrada + " en romanos es " + respuesta);
     }
 
-// Método para convertir a romano
+/* Método para convertir a romano
+
+ */
     static String convertirNumero (int numero){
         String numeroEnRomano = "";
         final String unoRomano ="I";
