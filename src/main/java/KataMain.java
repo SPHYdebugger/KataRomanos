@@ -7,7 +7,7 @@ class KataMain {
      *
      * @param args argumentos.
      */
-    public static void main(final String[] args) {
+    static void main(final String[] args) {
 
         int numeroEntrada;
         final int min = 1;
