@@ -3,9 +3,7 @@ import java.util.Scanner;
 
 public final class KataMain {
 
-/*Método principal
-
- */
+/** Método principal */
     public static void main(String[] args) {
         int numeroEntrada;
 
@@ -21,10 +19,8 @@ public final class KataMain {
             System.out.println("El número " + numeroEntrada + " en romanos es " + respuesta);
     }
 
-/* Método para convertir a romano
-
- */
-    static String convertirNumero (int numero){
+/** Método para convertir a romano */
+    static String convertirNumero (int numero) {
         String numeroEnRomano = "";
         final String unoRomano ="I";
         final int unidades;
@@ -35,13 +31,13 @@ public final class KataMain {
         unidades = numero % 10;
         centenas = numero / 100 % 10;
 
-        if (numero >= 1000 && numero<=1999){
+        if (numero >= 1000 && numero<=1999) {
             numeroEnRomano = numeroEnRomano + "M";
         }
-        if (numero >= 2000 && numero<=2999){
+        if (numero >= 2000 && numero<=2999) {
             numeroEnRomano = numeroEnRomano + "MM";
         }
-        if (numero == 3000){
+        if (numero == 3000) {
             numeroEnRomano = numeroEnRomano + "MMM";
         }
 
