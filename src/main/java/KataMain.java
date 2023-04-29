@@ -25,19 +25,19 @@ public final class KataMain {
 
 /** Método para convertir a romano. */
     static String convertirNumero (int numero) {
-        int ENTRE10 = 10;
-        int ENTRE100 = 100;
+        final int ENTRE10 = 10;
+        final int ENTRE100 = 100;
 
-        int MIL = 1000;
-        int FINALMIL = 1999;
-        int DOSMIL = 2000;
-        int FINALDOSMIL = 2999;
-        int TRESMIL = 3000;
+        final int MIL = 1000;
+        final int FINALMIL = 1999;
+        final int DOSMIL = 2000;
+        final int FINALDOSMIL = 2999;
+        final int TRESMIL = 3000;
 
-        int CUATRO = 4;
-        int CINCO = 5;
-        int SEIS = 6;
-        int NUEVE = 9;
+        final int CUATRO = 4;
+        final int CINCO = 5;
+        final int SEIS = 6;
+        final int NUEVE = 9;
 
 
         String numeroEnRomano = "";
