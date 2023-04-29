@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class KataMain {
 
+    //Método principal
     public static void main(String[] args) {
         int numeroEntrada;
 
@@ -24,7 +25,7 @@ public class KataMain {
         String unoRomano ="I";
         int unidades;
         int decenas;
-        int centenas;
+        final int centenas;
 
         decenas = numero / 10 % 10;
         unidades = numero % 10;
