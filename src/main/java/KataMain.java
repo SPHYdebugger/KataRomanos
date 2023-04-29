@@ -28,16 +28,16 @@ public final class KataMain {
         final int entre10 = 10;
         final int entre100 = 100;
 
-        final int MIL = 1000;
-        final int FINAL_MIL = 1999;
-        final int DOS_MIL = 2000;
-        final int FINAL_DOS_MIL = 2999;
-        final int TRES_MIL = 3000;
+        final int mil = 1000;
+        final int finalMil = 1999;
+        final int dosMil = 2000;
+        final int finalDosMil = 2999;
+        final int tresMil = 3000;
 
-        final int CUATRO = 4;
-        final int CINCO = 5;
-        final int SEIS = 6;
-        final int NUEVE = 9;
+        final int cuatro = 4;
+        final int cinco = 5;
+        final int seis = 6;
+        final int nueve = 9;
 
 
         String numeroEnRomano = "";
@@ -47,25 +47,25 @@ public final class KataMain {
         final int centenas = numero / entre100 % entre10;
 
 
-        if (numero >= MIL && numero<=FINAL_MIL) {
+        if (numero >= mil && numero<=finalMil) {
             numeroEnRomano = numeroEnRomano + "M";
         }
-        if (numero >= DOS_MIL && numero<=FINAL_DOS_MIL) {
+        if (numero >= dosMil && numero<=finalDosMil) {
             numeroEnRomano = numeroEnRomano + "MM";
         }
-        if (numero == TRES_MIL) {
+        if (numero == tresMil) {
             numeroEnRomano = numeroEnRomano + "MMM";
         }
 
 
-        if (centenas == NUEVE) {
+        if (centenas == nueve) {
             numeroEnRomano = numeroEnRomano + "CM";
-        } else if (centenas >= CINCO) {
+        } else if (centenas >= cinco) {
             numeroEnRomano = numeroEnRomano + "D";
-            for (int i = SEIS; i <= centenas; i++) {
+            for (int i = seis; i <= centenas; i++) {
                 numeroEnRomano = numeroEnRomano + "C";
             }
-        } else if (centenas == CUATRO) {
+        } else if (centenas == cuatro) {
             numeroEnRomano = numeroEnRomano + "CD";
         } else {
             for (int i = 1; i <= centenas; i++) {
@@ -73,14 +73,14 @@ public final class KataMain {
             }
         }
 
-        if (decenas == NUEVE) {
+        if (decenas == nueve) {
             numeroEnRomano = numeroEnRomano + "XC";
-        } else if (decenas >= CINCO) {
+        } else if (decenas >= cinco) {
             numeroEnRomano = numeroEnRomano + "L";
-            for (int i = SEIS; i <= decenas; i++) {
+            for (int i = seis; i <= decenas; i++) {
                 numeroEnRomano = numeroEnRomano + "X";
             }
-        } else if (decenas == CUATRO) {
+        } else if (decenas == cuatro) {
             numeroEnRomano = numeroEnRomano + "XL";
         } else {
             for (int i = 1; i <= decenas; i++) {
@@ -88,14 +88,14 @@ public final class KataMain {
             }
         }
 
-        if (unidades == NUEVE) {
+        if (unidades == nueve) {
             numeroEnRomano = numeroEnRomano + "IX";
-        } else if (unidades >= CINCO) {
+        } else if (unidades >= cinco) {
             numeroEnRomano = numeroEnRomano + "V";
-            for (int i = SEIS; i <= unidades; i++) {
+            for (int i = seis; i <= unidades; i++) {
                 numeroEnRomano = numeroEnRomano + unoRomano;
             }
-        } else if (unidades == CUATRO) {
+        } else if (unidades == cuatro) {
             numeroEnRomano = numeroEnRomano + "IV";
         } else {
             for (int i = 1; i <= unidades; i++) {
