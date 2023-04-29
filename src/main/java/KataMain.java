@@ -6,8 +6,8 @@ public final class KataMain {
 /** Método principal. */
     public static void main(final String[] args) {
         int numeroEntrada;
-        int MIN = 1;
-        int MAX = 3000;
+        final int MIN = 1;
+        final int MAX = 3000;
 
 
         Scanner teclado = new Scanner(System.in);
@@ -25,8 +25,8 @@ public final class KataMain {
 
 /** Método para convertir a romano. */
     static String convertirNumero(int numero) {
-        final int ENTRE_10 = 10;
-        final int ENTRE_100 = 100;
+        final int entre10 = 10;
+        final int entre100 = 100;
 
         final int MIL = 1000;
         final int FINAL_MIL = 1999;
@@ -42,9 +42,9 @@ public final class KataMain {
 
         String numeroEnRomano = "";
         final String unoRomano ="I";
-        final int unidades = numero % ENTRE_10;
-        final int decenas = numero / ENTRE_10 % ENTRE_10;
-        final int centenas = numero / ENTRE_100 % ENTRE_10;
+        final int unidades = numero % entre10;
+        final int decenas = numero / entre10 % entre10;
+        final int centenas = numero / entre100 % entre10;
 
 
         if (numero >= MIL && numero<=FINAL_MIL) {
