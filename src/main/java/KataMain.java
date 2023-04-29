@@ -6,8 +6,8 @@ public final class KataMain {
 /** Método principal. */
     public static void main(final String[] args) {
         int numeroEntrada;
-        final int MIN = 1;
-        final int MAX = 3000;
+        final int min = 1;
+        final int max = 3000;
 
 
         Scanner teclado = new Scanner(System.in);
@@ -16,7 +16,7 @@ public final class KataMain {
                 System.out.println("Introduce un número entre el 1 y el 3000 ");
                 System.out.println("Yo lo convertiré en números romanos.");
                 numeroEntrada = teclado.nextInt();
-            } while (numeroEntrada < MIN || numeroEntrada > MAX);
+            } while (numeroEntrada < min || numeroEntrada > max);
 
             String respuesta = convertirNumero(numeroEntrada);
             System.out.println("El número "
@@ -24,7 +24,7 @@ public final class KataMain {
     }
 
 /** Método para convertir a romano. */
-    static String convertirNumero(int numero) {
+    static String convertirNumero(final int numero) {
         final int entre10 = 10;
         final int entre100 = 100;
 
@@ -41,16 +41,16 @@ public final class KataMain {
 
 
         String numeroEnRomano = "";
-        final String unoRomano ="I";
+        final String unoRomano = "I";
         final int unidades = numero % entre10;
         final int decenas = numero / entre10 % entre10;
         final int centenas = numero / entre100 % entre10;
 
 
-        if (numero >= mil && numero<=finalMil) {
+        if (numero >= mil && numero <= finalMil) {
             numeroEnRomano = numeroEnRomano + "M";
         }
-        if (numero >= dosMil && numero<=finalDosMil) {
+        if (numero >= dosMil && numero <= finalDosMil) {
             numeroEnRomano = numeroEnRomano + "MM";
         }
         if (numero == tresMil) {
