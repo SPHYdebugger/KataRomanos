@@ -24,15 +24,15 @@ public final class KataMain {
     }
 
 /** Método para convertir a romano. */
-    static String convertirNumero (int numero) {
-        final int ENTRE10 = 10;
-        final int ENTRE100 = 100;
+    static String convertirNumero(int numero) {
+        final int ENTRE_10 = 10;
+        final int ENTRE_100 = 100;
 
         final int MIL = 1000;
-        final int FINALMIL = 1999;
-        final int DOSMIL = 2000;
-        final int FINALDOSMIL = 2999;
-        final int TRESMIL = 3000;
+        final int FINAL_MIL = 1999;
+        final int DOS_MIL = 2000;
+        final int FINAL_DOS_MIL = 2999;
+        final int TRES_MIL = 3000;
 
         final int CUATRO = 4;
         final int CINCO = 5;
@@ -42,18 +42,18 @@ public final class KataMain {
 
         String numeroEnRomano = "";
         final String unoRomano ="I";
-        final int unidades = numero % ENTRE10;
-        final int decenas = numero / ENTRE10 % ENTRE10;
-        final int centenas = numero / ENTRE100 % ENTRE10;
+        final int unidades = numero % ENTRE_10;
+        final int decenas = numero / ENTRE_10 % ENTRE_10;
+        final int centenas = numero / ENTRE_100 % ENTRE_10;
 
 
-        if (numero >= MIL && numero<=FINALMIL) {
+        if (numero >= MIL && numero<=FINAL_MIL) {
             numeroEnRomano = numeroEnRomano + "M";
         }
-        if (numero >= DOSMIL && numero<=FINALDOSMIL) {
+        if (numero >= DOS_MIL && numero<=FINAL_DOS_MIL) {
             numeroEnRomano = numeroEnRomano + "MM";
         }
-        if (numero == TRESMIL) {
+        if (numero == TRES_MIL) {
             numeroEnRomano = numeroEnRomano + "MMM";
         }
 
