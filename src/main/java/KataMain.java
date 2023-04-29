@@ -1,10 +1,14 @@
 
 import java.util.Scanner;
 
-public final class KataMain {
-
-/** Método principal. */
+final class KataMain {
+    /**
+     * Método principal.
+     *
+     * @param args argumentos.
+     */
     public static void main(final String[] args) {
+
         int numeroEntrada;
         final int min = 1;
         final int max = 3000;
@@ -23,7 +27,12 @@ public final class KataMain {
                  + numeroEntrada + " en romanos es " + respuesta);
     }
 
-/** Método para convertir a romano. */
+    /**
+     * Método para convertir un número en número romano.
+     *
+     * @param numero el número entero a convertir a romano.
+     * @return Devuelve el número convertido.
+     */
     static String convertirNumero(final int numero) {
         final int entre10 = 10;
         final int entre100 = 100;
