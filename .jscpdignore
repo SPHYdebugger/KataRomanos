@@ -1,0 +1,5 @@
+# Ignorar todos los archivos en la carpeta 'node_modules'
+node_modules/*
+
+# Ignorar el archivo 'uiDesigner.xml'
+.github/workspace/.idea/uiDesigner.xml
