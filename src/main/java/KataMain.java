@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public final class KataMain {
 
-    /** Constructor privado para evitar instanciación accidental
+    /** Constructor privado para evitar instanciación accidental.
      *
      */
     private KataMain() {
