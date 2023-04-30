@@ -1,1 +1,3 @@
-// Documento con información del proyecto
+/** Documento con información del proyecto.
+ *
+ */

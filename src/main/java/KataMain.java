@@ -1,13 +1,13 @@
 
 import java.util.Scanner;
 
-class KataMain {
+final class KataMain {
     /**
      * Método principal.
      *
      * @param args argumentos.
      */
-    static void main(final String[] args) {
+    public static void main(final String[] args) {
 
         int numeroEntrada;
         final int min = 1;
