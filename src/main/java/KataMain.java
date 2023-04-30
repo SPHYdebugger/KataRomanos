@@ -1,7 +1,13 @@
 
 import java.util.Scanner;
 
-final class KataMain {
+public final class KataMain {
+
+    /** constructor privado para evitar instanciación accidental */
+    private KataMain() {
+
+    }
+
     /**
      * Método principal.
      *
