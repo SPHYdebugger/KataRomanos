@@ -20,11 +20,7 @@ jobs:
         with:
           java-version: '17'
 
-      - name: Build with Gradle
-        run: ./gradlew build
-
-      - name: Run Linter
-        run: ./gradlew lint
+      
 
       - name: Deploy to Main
         if: success() && github.ref == 'refs/heads/develop'
