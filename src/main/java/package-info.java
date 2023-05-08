@@ -2,6 +2,6 @@
  *
  */
 
-/** Proyecto para convertir números a formato romanos. */
+/** Proyecto para convertir a formato romanos. */
 
 /** Prueba de commit en rama develop2. */
