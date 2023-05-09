@@ -27,13 +27,16 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install
+        
+      - name: Run tests
+        run: mvn -B test
 
       - name: Deploy to Master
-        if: ${{ success() && github.ref == 'refs/heads/develop' }}
+        if: success() && github.ref == 'refs/heads/develop'
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.PROMOTE_TO_MAIN_TOKEN }}
-          publish_dir: .
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/libs/
           publish_branch: master
 
 
