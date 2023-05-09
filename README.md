@@ -1,4 +1,4 @@
-# Proyecto de la asignatura Entornos de Desarrollo.
+# Proyecto de la asignatura Entornos de Desarrollo
 Este proyecto es una actividad de evaluación para la asignatura de Entornos de Desarrollo, en la que se realizan pruebas unitarias y de integración continua. El objetivo de la actividad es demostrar el conocimiento adquirido durante la asignatura en cuanto a buenas prácticas de programación, control de versiones y pruebas automatizadas.
 
 El proyecto consta de una aplicación en Java que implementa un conjunto de funcionalidades. Para asegurar la calidad del código, se han implementado pruebas unitarias para cada funcionalidad. Además, se ha configurado una integración continua que se encarga de realizar las pruebas automáticamente cada vez que se realiza una actualización en el repositorio.
