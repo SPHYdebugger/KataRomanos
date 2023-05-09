@@ -31,8 +31,6 @@ jobs:
       - name: Deploy to Master
         if: ${{ success() && github.ref == 'refs/heads/develop' }}
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
           git checkout master
           git merge develop --no-ff --no-edit
           git push origin master
