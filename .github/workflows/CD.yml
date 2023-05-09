@@ -16,7 +16,7 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: true
-          DEFAULT_BRANCH: "main"
+          DEFAULT_BRANCH: "master"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up JDK
@@ -31,8 +31,8 @@ jobs:
       - name: Deploy to Master
         if: ${{ success() && github.ref == 'refs/heads/develop' }}
         run: |
-          git checkout main
+          git checkout origin/master
           git merge develop --no-ff --no-edit
-          git push origin main
+          git push origin origin/master
 
 
