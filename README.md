@@ -5,4 +5,3 @@ El proyecto consta de una aplicación en Java que implementa un conjunto de func
 
 La integración continua se lleva a cabo mediante el uso de herramientas como GitHub Actions. Estas herramientas permiten automatizar el proceso de construcción y pruebas, lo que reduce la posibilidad de errores y mejora la calidad del código.
 
-En resumen, este proyecto es una muestra de las habilidades y conocimientos adquiridos en la asignatura de Entornos de Desarrollo, enfocados en la programación de calidad, el control de versiones y la integración continua.
